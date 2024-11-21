@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Himel Borno";
+    src: url(./assets/custom_font/FN\ Himel\ Borno\ Unicode.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/images/form-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    backdrop-filter: blur(3px); /* Adjust blur intensity */  
+    background-color: rgba(0, 0, 0, 0.2); /* Optional overlay color */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.dayTestChecker{
+   width: 100%;
+   max-width: 800px;
+   height: 50vh;
+   border-radius: 1rem ;
+   -webkit-border-radius: 1rem ;
+   -moz-border-radius: 1rem ;
+   -ms-border-radius: 1rem ;
+   -o-border-radius: 1rem ;
+   text-align: center;
+   /* backdrop-filter: blur(10px); */
+   padding: 1rem;
+   & label{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+   }
+   & input[type="text"]{
+    font-size: 1.4rem;
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 0.2rem solid #ccc;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+& button{
+    width: 50%;
+    padding: 1.2rem 1.5rem;
+    background: #007bff;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    cursor: pointer;
+    
+}
+& button:hover {
+background: #0056b3;
+border-color: none;
+}
+}
